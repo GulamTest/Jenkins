@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests" thread-count="3">
+<test name="WIN8TEST">
+  <parameter name="browser" value="firefox"/>
+  <parameter name="version" value="6.0"/>
+  <parameter name="platform" value="Android"/>
+  <parameter name="deviceName" value="HTC 10"/>
+    <classes>
+      <class name="Login.TunnelTest"/>
+    </classes>
+  </test> <!-- Test -->
+ <test name="WIN10TEST">
+  <parameter name="browser" value="chrome"/>
+  <parameter name="version" value="86.0"/>
+  <parameter name="platform" value="win10"/>
+  
+    <classes>
+      <class name="Login.TunnelTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="MACTEST">
+  <parameter name="browser" value="safari"/>
+  <parameter name="version" value="12.0"/>
+  <parameter name="platform" value="macos mojave"/>
+    <classes>
+      <class name="Login.TunnelTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
