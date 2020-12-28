@@ -14,7 +14,7 @@ public class firefox {
 		
 		driver.get("https://accounts.lambdatest.com/login");
 	    driver.findElement(By.name("email")).sendKeys("gulama@lambdatest.com");
-	    driver.findElement(By.name("password")).sendKeys("lambdatest1");
+	    driver.findElement(By.name("password")).sendKeys("**********");
         driver.findElement(By.xpath("//button[@type='submit']")).click();
 	    driver.manage().window().maximize();
 	    driver.quit();
